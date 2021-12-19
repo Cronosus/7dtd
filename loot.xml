@@ -1,0 +1,145 @@
+<HarryVehicleMods>
+
+
+
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='empty']">
+
+<lootgroup name="VehicleModHarryT1" count="1">
+	<item name="modLedHeadLights"/>
+	<item name="modNGKSparkPlug"/>
+	<item name="modSmallEngineCam"/>
+	<item name="modSmallEngineHighPerformanceAirFilter"/>
+	<item name="modGearRingandPinionSet410to1"/>
+	<item name="modSSCycleV80VSeriesEngineSwap"/>
+	<item name="modMotorcycleTransGears5Speed"/>
+	<item name="modMotorcycleSSSuperStreetExhaust"/>
+	<item name="modHolley500CFMPerformance2BarrelCarb"/>
+	<item name="modHolley600CFMStreetWarrior4BarrelCarb"/>
+</lootgroup>
+
+<lootgroup name="VehicleModHarryT2" count="1">
+	<item name="modSmallEngineHighCompressionPistonKit"/>
+	<item name="modlargeEngineCam"/>
+	<item name="modChevyCT350EngineSwap"/>
+	<item name="modChevyRamJet350EngineSwap"/>
+	<item name="modLargeEngineTrans5Speed"/>
+	<item name="modLargeEngineTrans6Speed"/>
+	<item name="modGearRingandPinionSet373to1"/>
+	<item name="modGearRingandPinionSet529to1"/>
+	<item name="modLargeEngineHighPerformanceAirFilter"/>
+	<item name="modSSCycleTSeriesLongBlockEngineSwap"/>
+	<item name="modMotorcycleCam"/>
+	<item name="modMotorcycleTransGears6Speed"/>
+	<item name="modFinalDrivePulley66T"/>
+	<item name="modFinalDrivePulley70T"/>
+	<item name="modHookerHeadersBlackHeartLongTubeHeaders"/>
+	<item name="modKooksLongTubeHeaders"/>
+	<item name="modKooksHPipe"/>
+	<item name="modKooksXPipe"/>
+	<item name="modHolley625CFMStreetDemon4BarrelCarb"/>
+	<item name="modHolley750CFMBrawlerRace4BarrelCarb"/>
+	<item name="modMSDIgnitionCoilBlasterSSSeries"/>
+	<item name="modMSDDigital6ALIgnitionControl"/>
+</lootgroup>
+
+<lootgroup name="VehicleModHarryT3" count="1">
+	<item name="modGearRingandPinionSet271to1"/>
+	<item name="modLargeEngineHighCompressionPistonKit"/>
+	<item name="modFord429WindsorEngineSwap"/>
+	<item name="modFord572SuperchargedEngineSwap"/>
+	<item name="modFinalDrivePulley61T"/>
+	<item name="modHolley1025CFMTriPower3x2Carb"/>
+	<item name="modHolley1450CFMQFX4BarrelDragCarb"/>
+	<item name="modMSDProBilletHEIDistributor"/>
+</lootgroup>
+
+</insertBefore>  
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT0']">
+	<item group="VehicleModHarryT1" loot_prob_template="ProbT1"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
+	<item group="VehicleModHarryT2" loot_prob_template="ProbT2"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+	<item group="VehicleModHarryT3" loot_prob_template="ProbT3"/>
+</append> 
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupAutomotive']">
+	<item group="VehicleModHarryT1" prob="0.1"/>
+	<item group="VehicleModHarryT2" prob="0.05"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='groupRareAutomotive']">
+	<item group="VehicleModHarryT2" prob="0.1"/>
+	<item group="VehicleModHarryT3" prob="0.04"/>
+</append> 
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT0']">
+	<item name="modLedHeadLightsSchematic"/>
+	<item name="modNGKSparkPlugSchematic"/>
+	<item name="modSmallEngineHighPerformanceAirFilterSchematic"/>
+	<item name="modLargeEngineHighPerformanceAirFilterSchematic"/>
+	<item name="modGearRingandPinionSet410to1Schematic"/>
+	<item name="modSSCycleV80VSeriesEngineSwapSchematic"/>
+	<item name="modMotorcycleTransGears5SpeedSchematic"/>
+	<item name="modMotorcycleSSSuperStreetExhaustSchematic"/>
+	<item name="modHolley500CFMPerformance2BarrelCarbSchematic"/>
+	<item name="modHolley600CFMStreetWarrior4BarrelCarbSchematic"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
+	<item name="modGearRingandPinionSet373to1Schematic"/>
+	<item name="modSmallEngineCamSchematic"/>
+	<item name="modSmallEngineHighCompressionPistonKitSchematic"/>
+	<item name="modChevyCT350EngineSwapSchematic"/>
+	<item name="modChevyRamJet350EngineSwapSchematic"/>
+	<item name="modlargeEngineCamSchematic"/>
+	<item name="modLargeEngineTrans5SpeedSchematic"/>
+	<item name="modLargeEngineTrans6SpeedSchematic"/>
+	<item name="modSSCycleTSeriesLongBlockEngineSwapSchematic"/>
+	<item name="modMotorcycleCamSchematic"/>
+	<item name="modMotorcycleTransGears6SpeedSchematic"/>
+	<item name="modFinalDrivePulley66TSchematic"/>
+	<item name="modFinalDrivePulley70TSchematic"/>
+	<item name="modHookerHeadersBlackHeartLongTubeHeadersSchematic"/>
+	<item name="modKooksLongTubeHeadersSchematic"/>
+	<item name="modKooksHPipeSchematic"/>
+	<item name="modKooksXPipeSchematic"/>
+	<item name="modHolley625CFMStreetDemon4BarrelCarbSchematic"/>
+	<item name="modHolley750CFMBrawlerRace4BarrelCarbSchematic"/>
+	<item name="modMSDIgnitionCoilBlasterSSSeriesSchematic"/>
+	<item name="modMSDDigital6ALIgnitionControlSchematic"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+	<item name="modFord429WindsorEngineSwapSchematic"/>
+	<item name="modFord572SuperchargedEngineSwapSchematic"/>
+	<item name="modGearRingandPinionSet271to1Schematic"/>
+	<item name="modGearRingandPinionSet529to1Schematic"/>
+	<item name="modLargeEngineHighCompressionPistonKitSchematic"/>
+	<item name="modFinalDrivePulley61TSchematic"/>
+	<item name="modHolley1025CFMTriPower3x2CarbSchematic"/>
+	<item name="modHolley1450CFMQFX4BarrelDragCarbSchematic"/>
+	<item name="modMSDProBilletHEIDistributorSchematic"/>
+</append> 
+
+
+<!--
+<append xpath="/lootcontainers/lootcontainer[@id='90']">
+	<item group="VehicleModHarryT1" prob="0.07"/>
+	<item group="VehicleModHarryT2" prob="0.04"/>
+	<item group="VehicleModHarryT3" prob="0.01"/>
+</append> 
+-->
+</HarryVehicleMods>
