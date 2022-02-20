@@ -1,0 +1,5 @@
+<config>
+
+<set xpath="/progression/perk[@name='perkShotgunMessiahDamage']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">"ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoBundleBlunderbuss"</set>
+
+</config>
