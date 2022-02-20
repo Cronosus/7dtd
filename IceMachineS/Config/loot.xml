@@ -5,6 +5,7 @@
 <insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDrop01']">
 <lootgroup name="groupice" count="all">
 	<item name="foodIcePack" count="0,10" loot_prob_template="veryLow"/>
+	<item name="resourceSnowBall" count="1,25" loot_prob_template="veryLow"/>
 </lootgroup>
 </insertAfter>
 <append xpath="/lootcontainers">
