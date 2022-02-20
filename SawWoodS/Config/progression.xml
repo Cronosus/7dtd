@@ -1,0 +1,6 @@
+<configs>
+
+<!-- tableSaw -->
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='2,5']/@tags">,tableSaw</append>
+
+</configs>

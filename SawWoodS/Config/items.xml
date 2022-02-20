@@ -1,0 +1,109 @@
+<config>
+
+<!-- tags for wood to be visible in Saw -->
+<append xpath="/items/item[@name='resourceWood']/property[@name='Group' and @value]/@value">,Building,Basics</append>
+
+<!-- tablesaw schematic -->
+<append xpath="/items">
+	<item name="tableSawSchematic">
+		<property name="Extends" value="schematicNoQualityMaster"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="tableSaw"/>
+		<property name="Unlocks" value="tableSaw"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="tableSaw" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+	</item>
+
+<!-- Items -->
+	<item name="woodBranch">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceWood"/>
+		<property name="CustomIcon" value="resourceYuccaFibers"/>
+			<property name="CustomIconTint" value="122,56,27"/>
+		<Property name="TintColor" value="7A381B"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="10000"/>
+		<property name="FuelValue" value="10"/>
+		<property name="EconomicValue" value="5"/>
+		<property name="EconomicBundleSize" value="250"/>
+		<property name="Group" value="Resources"/>
+		<property name="RepairAmount" value="100"/>
+		<property name="LootExpValue" value=".5"/>
+		<property name="CraftingIngredientTime" value=".5"/>
+	</item>
+	<item name="woodBranchBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="resourceYuccaFibers"/>
+			<property name="CustomIconTint" value="122,56,27"/>
+		<Property name="TintColor" value="7A381B"/>
+		<property class="Action0">
+			<property name="Create_item" value="woodBranch"/>
+			<property name="Create_item_count" value="10000"/>
+		</property>
+	</item>
+
+<!-- WIP -->
+<!--
+	<item name="resourceCharCoal">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceCoal"/>
+		<property name="CustomIcon" value="resourceCoal"/>
+			<property name="CustomIconTint" value="88,35,12"/>
+		<Property name="TintColor" value="58230C"/>
+		<property name="Stacknumber" value="6000"/>
+		<property name="FuelValue" value="80"/>
+		<property name="EconomicValue" value="8"/>
+		<property name="EconomicBundleSize" value="10"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value="0.5"/>
+		<property name="Weight" value="5"/>
+	</item>
+	<item name="resourceCharCoalBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="resourceCoal"/>
+			<property name="CustomIconTint" value="88,35,12"/>
+		<Property name="TintColor" value="58230C"/>
+		<property class="Action0">
+			<property name="Create_item" value="resourceCharCoal"/>
+			<property name="Create_item_count" value="6000"/>
+		</property>
+	</item>
+	<item name="resourceTreeSap">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="225,106,12"/>
+		<Property name="TintColor" value="E16A0C"/>
+		<property name="Stacknumber" value="1000"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value="10"/>
+		<property name="Weight" value="10"/>
+	</item>
+	<item name="resourceTreeSapBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="225,106,12"/>
+		<Property name="TintColor" value="E16A0C"/>
+		<property class="Action0">
+			<property name="Create_item" value="resourceTreeSap"/>
+			<property name="Create_item_count" value="1000"/>
+		</property>
+	</item>
+-->
+</append>
+
+
+
+
+
+</config>

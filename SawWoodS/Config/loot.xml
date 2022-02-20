@@ -1,0 +1,11 @@
+<config>
+
+<!-- tablesaw -->
+<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT1']">
+	<item name="tableSawSchematic"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot04']">
+	<item name="tableSawSchematic"/>
+</append>
+
+</config>

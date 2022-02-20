@@ -1,0 +1,48 @@
+<configs>
+
+
+<!-- Remove Wood Log recipe. -->
+<remove xpath="/recipes/recipe[@name='woodLogPillar100']"/>
+
+
+<!-- recipes. -->
+<append xpath="/recipes">
+
+	<recipe name="tableSaw" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceElectricParts" count="10"/>
+		<ingredient name="resourceSpring" count="4"/>
+	</recipe>
+
+	<recipe name="resourceWood" count="10" craft_area="tableSaw" craft_time="10">
+		<ingredient name="woodLogPillar100" count="1"/>
+	</recipe>
+	<recipe name="resourceWood" count="6" craft_area="tableSaw" craft_time="6">
+		<ingredient name="driftwood" count="1"/>
+	</recipe>
+	<recipe name="resourceWood" count="30" craft_area="tableSaw" craft_time="30">
+		<ingredient name="modularFireWoodStackA" count="1"/>
+	</recipe>
+	<recipe name="resourceWood" count="26" craft_area="tableSaw" craft_time="26">
+		<ingredient name="modularFireWoodStackB" count="1"/>
+	</recipe>
+	<recipe name="resourceWood" count="8" craft_area="tableSaw" craft_time="8">
+		<ingredient name="modularFireWoodStackC" count="1"/>
+	</recipe>
+
+	<recipe name="woodBlock" count="1" craft_area="tableSaw" craft_time="4">
+		<ingredient name="woodLogPillar100" count="1"/>
+	</recipe>
+	<recipe name="plainWoodWindowPlugCTRPlate" count="9" craft_area="tableSaw" craft_time="8">
+		<ingredient name="woodLogPillar100" count="1"/>
+	</recipe>
+	<recipe name="woodLogSpike1" count="1" craft_area="tableSaw" craft_time="10">
+		<ingredient name="woodLogPillar100" count="1"/>
+	</recipe>
+
+
+</append>
+
+
+</configs>
