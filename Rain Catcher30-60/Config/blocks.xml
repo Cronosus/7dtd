@@ -1,0 +1,50 @@
+<configs>
+<append xpath="/blocks">
+
+<block name="waterBarrelWS">
+	<property name="CustomIcon" value="cntBarrelPlasticSingle00"/>
+	<property name="Class" value="Workstation" />
+	<property name="Material" value="Mplastics" />
+	<property name="MaxDamage" value="300"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="Entities/Industrial/barrelPlasticPrefab" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HeatMapStrength" value="0,1"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>
+	<property name="Stacknumber" value="1" />
+	<property name="MultiBlockDim" value="1,20,1" />
+
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="waterBarrelWS"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="CraftActionName" value="lblContextActionCraft"/>
+	<property name="CraftIcon" value="ui_game_symbol_campfire"/>
+	<property name="OpenSound" value="UseActions/open_trashcan"/>
+	<property name="CloseSound" value="UseActions/close_trashcan"/>
+
+	<property class="RepairItems">
+		<property name="resourceScrapPolymers" value="20"/>
+		<property name="resourceScrapIron" value="100"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="20" tag="allHarvest"/>
+	<drop event="Destroy" name="bucketEmpty" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="DescriptionKey" value="waterBarrelWSDesc"/>
+	<property name="EconomicValue" value="5000"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	<property name="SortOrder1" value="70i0"/>
+	<property name="SellableToTrader" value="false" />
+</block>
+
+</append>
+</configs>

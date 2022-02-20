@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Rain Catcher" />
+		<Description value="Catch rainwater into Jars. Crafting station" />
+		<Author value="CronosusCZ" />
+		<Version value="v2.0" />
+	</ModInfo>
+</xml>

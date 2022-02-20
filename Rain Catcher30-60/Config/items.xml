@@ -1,0 +1,4 @@
+<config>
+<set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Group']/@value">Food/Cooking,CFDrink/Cooking,Resources</set>
+
+</config>

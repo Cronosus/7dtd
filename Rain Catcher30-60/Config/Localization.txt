@@ -1,0 +1,5 @@
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+
+
+waterBarrelWS,items,Item,,,"Rain Catcher",,,,,,,,,,,,,,
+waterBarrelWSDesc,items,Item,,,"Catch water into Jars. (Crafting)",,,,,,,,,,,,,,
