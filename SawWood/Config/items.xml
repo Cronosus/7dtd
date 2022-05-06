@@ -47,7 +47,6 @@
 	</item>
 
 <!-- WIP -->
-<!--
 	<item name="resourceCharCoal">
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -99,7 +98,7 @@
 			<property name="Create_item_count" value="1000"/>
 		</property>
 	</item>
--->
+
 </append>
 
 
