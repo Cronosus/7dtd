@@ -103,14 +103,18 @@
 </append>
 
 
-<!-- set Log -->
+<!-- set Group -->
 <append xpath="/blocks/block[@name='woodLogPillar100']/property[@name='Group' and @value]/@value">,Resources</append>
+<append xpath="/blocks/block[@name='plainWoodWindowPlugCTRPlate']">
+	<property name="Group" value="Building"/>
+</append>
 
-<!-- TreeSap 
+
+<!-- TreeSap -->
 	<append xpath="/blocks/block[@name='treeMaster']">
 		<drop event="Harvest" name="resourceTreeSap" prob=".2" count="1" tag="WasteTreasuresHoneyHarvest"/>
 	</append>
--->
+
 
 <!-- trees -->
 	<remove xpath="/blocks/block[@name='treeJuniper4m']/drop[@name='resourceWood']"/>
@@ -391,7 +395,7 @@
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="30"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -430,7 +434,7 @@
 	<property name="DowngradeBlock" value="woodLogSpike1"/>
 	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -470,7 +474,7 @@
 	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Destroy" name="resourceScrapIron" count="8"/>
 	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -511,7 +515,7 @@
 	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Destroy" name="resourceScrapIron" count="15"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="60"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -552,7 +556,7 @@
 	<drop event="Destroy" name="resourceWood" count="2,6"/>
 	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="70"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -586,7 +590,7 @@
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
 	<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="Group" value="Tools/Traps,Decor/Miscellaneous"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="160"/>
 	<property name="EconomicBundleSize" value="20"/>
