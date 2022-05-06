@@ -1,0 +1,54 @@
+<config>
+
+<!--set items material & weight   -->
+	<append xpath="/items/item[@name='resourceForgedSteel']">
+		<property name="Weight" value="20"/>
+	</append>
+
+
+<!--New   -->
+<append xpath="/items">
+	<item name="unit_steel">
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="resourceScrapIron"/>
+			<property name="CustomIconTint" value="93AB8B"/>
+		<property name="Material" value="MsteelNoGlue"/>
+		<property name="Stacknumber" value="30000"/>
+		<property name="Weight" value="1"/>
+		<property name="Group" value="Resources"/>
+		<property name="ResourceUnit" value="true"/>
+		<property name="MeltTimePerUnit" value=".25"/> <!-- forge smelting time -->
+		<property name="UserHidden" value="true"/>
+		<property name="CraftingIngredientTime" value=".5"/>
+		<property name="CreativeMode" value="None"/>
+	</item>
+	<item name="resourceScrapSteelBundle">
+		<property name="Extends" value="resourceRockSmallBundle"/>
+		<property name="CustomIcon" value="resourceScrapIron"/>
+			<property name="CustomIconTint" value="93AB8B"/>
+		<property class="Action0">
+			<property name="Create_item" value="resourceScrapSteel"/>
+			<property name="Create_item_count" value="6000"/>
+		</property>
+	</item>
+	<item name="resourceScrapSteel"> <!-- scrap material -->
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="CustomIcon" value="resourceScrapIron"/>
+			<property name="CustomIconTint" value="93AB8B"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceScrapSteel"/>
+		<property name="Weight" value="1"/>
+		<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+		<property name="EconomicValue" value="100"/>
+		<property name="EconomicBundleSize" value="10"/>
+		<property name="Group" value="Resources"/>
+		<property name="RepairTime" value=".5"/>
+		<property name="RepairAmount" value="20"/>
+		<property name="CraftingIngredientTime" value=".2"/>
+	</item>
+</append>
+
+</config>

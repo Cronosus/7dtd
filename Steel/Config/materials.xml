@@ -1,0 +1,43 @@
+<config>
+
+<!--material set to steel-->
+<set xpath="/materials/material[@id='MresourceForgedSteel']/property[@name='forge_category' and @value]/@value">steel</set>
+<set xpath="/materials/material[@id='Msteel']/property[@name='forge_category' and @value]/@value">steel</set>
+<set xpath="/materials/material[@id='MstainlessSteel']/property[@name='forge_category' and @value]/@value">steel</set>
+<set xpath="/materials/material[@id='Msteel_shapes']/property[@name='forge_category' and @value]/@value">steel</set>
+
+<!--new-->
+<append xpath="/materials">
+<material id="MsteelNoGlue">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="steel"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="0"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="Experience" value="2"/>
+</material>
+<material id="MresourceScrapSteel">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="steel"/>
+	<property name="Experience" value="1.6"/>
+</material>
+<material id="MArrowHeadSteelAP">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="resourceArrowHeadSteelAP"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MArrowHeadIron">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="resourceArrowHeadIron"/>
+	<property name="Experience" value="6"/>
+</material>
+
+</append>
+
+</config>
