@@ -8,6 +8,15 @@
 <!-- recipes. -->
 <append xpath="/recipes">
 
+  <recipe name="resourceCharCoalBundle" count="1" craft_time="10" tags="learnable">
+	  <ingredient name="resourceCharCoal" count="6000"/>
+  </recipe>
+  <recipe name="woodBranchBundle" count="1" craft_time="10" tags="learnable">
+	  <ingredient name="woodBranch" count="6000"/>
+  </recipe>
+
+
+<!--tablesaw-->
 	<recipe name="tableSaw" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 		<ingredient name="resourceForgedIron" count="25"/>
 		<ingredient name="resourceMechanicalParts" count="20"/>
@@ -15,6 +24,7 @@
 		<ingredient name="resourceSpring" count="4"/>
 	</recipe>
 
+<!--tablesaw recipes-->
 	<recipe name="resourceWood" count="10" craft_area="tableSaw" craft_time="10">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
@@ -30,7 +40,6 @@
 	<recipe name="resourceWood" count="8" craft_area="tableSaw" craft_time="8">
 		<ingredient name="modularFireWoodStackC" count="1"/>
 	</recipe>
-
 	<recipe name="woodBlock" count="1" craft_area="tableSaw" craft_time="4">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
@@ -40,6 +49,72 @@
 	<recipe name="woodLogSpike1" count="1" craft_area="tableSaw" craft_time="10">
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
+
+<!--Fire logspikes-->
+  <recipe name="scrapIronLogSpike4Fire" count="1">
+	 <ingredient name="resourceTreeSap" count="1"/>
+	 <ingredient name="scrapIronLogSpike4" count="1"/>
+  </recipe>
+  <recipe name="rScrapIronLogSpike5Fire" count="1">
+	 <ingredient name="resourceTreeSap" count="1"/>
+	 <ingredient name="rScrapIronLogSpike5" count="1"/>
+  </recipe>
+  <recipe name="steelLogSpike6Fire" count="1">
+	 <ingredient name="resourceTreeSap" count="1"/>
+	 <ingredient name="steelLogSpike6" count="1"/>
+  </recipe>
+
+<!--substitutes-->
+  <recipe name="meleeToolTorch" count="1">
+	 <ingredient name="resourceTreeSap" count="1"/>
+	 <ingredient name="resourceCloth" count="1"/>
+	 <ingredient name="resourceWood" count="1"/>
+  </recipe>
+  <recipe name="candle" count="1">
+	 <ingredient name="resourceYuccaFibers" count="1"/>
+	 <ingredient name="resourceTreeSap" count="1"/>
+  </recipe>
+  <recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+	 <ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	 <ingredient name="resourceScrapPolymers" count="2"/>
+	 <ingredient name="resourceGunPowder" count="2"/>
+	 <ingredient name="resourceCloth" count="1"/>
+	 <ingredient name="resourceTreeSap" count="1"/>
+  </recipe>
+  <recipe name="ammoBundleArrowFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	 <ingredient name="resourceArrowHeadSteelAP" count="80"/>
+	 <ingredient name="resourceScrapPolymers" count="160"/>
+	 <ingredient name="resourceGunPowder" count="160"/>
+ 	 <ingredient name="resourceCloth" count="80"/>
+	 <ingredient name="resourceTreeSap" count="80"/>
+  </recipe>
+  <recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+	 <ingredient name="resourceArrowHeadSteelAP" count="1"/>
+	 <ingredient name="resourceScrapPolymers" count="2"/>
+	 <ingredient name="resourceGunPowder" count="2"/>
+	 <ingredient name="resourceCloth" count="1"/>
+	 <ingredient name="resourceTreeSap" count="1"/>
+  </recipe>
+  <recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+	 <ingredient name="resourceArrowHeadSteelAP" count="80"/>
+	 <ingredient name="resourceScrapPolymers" count="160"/>
+	 <ingredient name="resourceGunPowder" count="160"/>
+	 <ingredient name="resourceCloth" count="80"/>
+	 <ingredient name="resourceTreeSap" count="80"/>
+  </recipe>
+  <recipe name="drinkJarPureMineralWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	 <ingredient name="drinkJarRiverWater" count="1"/>
+	 <ingredient name="resourceCharCoal" count="1"/>
+	 <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+	 <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+  </recipe>
+  <recipe name="modArmorWaterPurifier" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	 <ingredient name="resourceForgedSteel" count="5"/>
+	 <ingredient name="resourceScrapPolymers" count="10"/>
+	 <ingredient name="resourceDuctTape" count="2"/>
+	 <ingredient name="resourceCharCoal" count="30"/>
+	 <ingredient name="resourceSewingKit" count="1"/>
+  </recipe>
 
 
 </append>
