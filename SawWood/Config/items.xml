@@ -1,8 +1,5 @@
 <config>
 
-<!-- tags for wood to be visible in Saw -->
-<append xpath="/items/item[@name='resourceWood']/property[@name='Group' and @value]/@value">,Building,Basics</append>
-
 <!-- tablesaw schematic -->
 <append xpath="/items">
 	<item name="tableSawSchematic">
@@ -27,7 +24,7 @@
 		<Property name="TintColor" value="7A381B"/>
 		<property name="Weight" value="1"/>
 		<property name="Stacknumber" value="10000"/>
-		<property name="FuelValue" value="10"/>
+		<property name="FuelValue" value="20"/>
 		<property name="EconomicValue" value="5"/>
 		<property name="EconomicBundleSize" value="250"/>
 		<property name="Group" value="Resources"/>
@@ -82,6 +79,7 @@
 			<property name="CustomIconTint" value="225,106,12"/>
 		<Property name="TintColor" value="E16A0C"/>
 		<property name="Stacknumber" value="1000"/>
+		<property name="FuelValue" value="30"/>
 		<property name="EconomicValue" value="50"/>
 		<property name="EconomicBundleSize" value="1"/>
 		<property name="Group" value="Resources"/>

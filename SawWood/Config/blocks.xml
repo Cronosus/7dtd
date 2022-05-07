@@ -80,14 +80,14 @@
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 	<drop event="Destroy" name="tableSaw" count="1" tool_category="Disassemble" />
 -->
-<!--harvest resources -->
-
+<!--harvest resources, remove/quote this in case you want to harves tablesaw instead (code above) -->
 	<drop event="Harvest" name="resourceScrapIron" count="300" tag="allHarvest"/>
 	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
 	<drop event="Destroy" count="0"/>
+
 
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
@@ -112,7 +112,8 @@
 
 <!-- TreeSap -->
 	<append xpath="/blocks/block[@name='treeMaster']">
-		<drop event="Harvest" name="resourceTreeSap" prob=".2" count="1" tag="WasteTreasuresHoneyHarvest"/>
+		<drop event="Harvest" name="resourceTreeSap" prob=".9" count="1" tag="oreWoodHarvest"/>
+		<drop event="Harvest" name="woodBranch" prob="1.5" count="1,5" tag="oreWoodHarvest"/>
 	</append>
 
 
@@ -120,19 +121,7 @@
 	<remove xpath="/blocks/block[@name='treeJuniper4m']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treeJuniper4m']">
 		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
-	</append><!--
-	<remove xpath="/blocks/block[@name='treeBirch10m']/drop[@name='resourceWood']" />
-	<append xpath="/blocks/block[@name='treeBirch10m']">
-		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
 	</append>
-	<remove xpath="/blocks/block[@name='treeBirch12m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeBirch12m']">
-		<drop event="Harvest" name="woodLogPillar100" count="7" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treeBirch15m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeBirch15m']">
-		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
-	</append>-->
 	<remove xpath="/blocks/block[@name='treeDeadTree01']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treeDeadTree01']">
 		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
@@ -205,18 +194,6 @@
 	<append xpath="/blocks/block[@name='treeMountainPineDry21m']">
 		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
 	</append>
-	<remove xpath="/blocks/block[@name='treePineBurntLrg']/drop[@name='resourceWood']" />
-	<append xpath="/blocks/block[@name='treePineBurntLrg']">
-		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treePineBurntMed']/drop[@name='resourceWood']" />
-	<append xpath="/blocks/block[@name='treePineBurntMed']">
-		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treePineBurntFullMed']">
-		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
-	</append>
 	<remove xpath="/blocks/block[@name='treeFirLrg01']/drop[@name='resourceWood']" />
 	<append xpath="/blocks/block[@name='treeFirLrg01']">
 		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
@@ -268,27 +245,7 @@
 	<remove xpath="/blocks/block[@name='treePlantedWinterPine28m']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treePlantedWinterPine28m']">
 		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
-	</append><!--
-	<remove xpath="/blocks/block[@name='treeMaple6m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeMaple6m']">
-		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
 	</append>
-	<remove xpath="/blocks/block[@name='treeMaple13m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeMaple13m']">
-		<drop event="Harvest" name="woodLogPillar100" count="7" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treeMaple15m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeMaple15m']">
-		<drop event="Harvest" name="woodLogPillar100" count="10" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treeMaple16m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeMaple16m']">
-		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
-	</append>
-	<remove xpath="/blocks/block[@name='treeMaple17m']/drop[@name='resourceWood']"/>
-	<append xpath="/blocks/block[@name='treeMaple17m']">
-		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
-	</append>-->
 	<remove xpath="/blocks/block[@name='treeStump']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treeStump']">
 		<drop event="Harvest" name="woodLogPillar100" count="2,3" tag="oreWoodHarvest"/>
@@ -297,18 +254,50 @@
 	<append xpath="/blocks/block[@name='treeStumpPOI']">
 		<drop event="Harvest" name="woodLogPillar100" count="2,3" tag="oreWoodHarvest"/>
 	</append>
+	<remove xpath="/blocks/block[@name='treePineBurntLrg']/drop[@name='resourceWood']" />
+	<remove xpath="/blocks/block[@name='treePineBurntLrg']/drop[@name='resourceCoal']"/>
+	<append xpath="/blocks/block[@name='treePineBurntLrg']">
+		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treePineBurntMed']/drop[@name='resourceWood']" />
+	<remove xpath="/blocks/block[@name='treePineBurntMed']/drop[@name='resourceCoal']"/>
+	<append xpath="/blocks/block[@name='treePineBurntMed']">
+		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@name='resourceWood']"/>
+	<remove xpath="/blocks/block[@name='treePineBurntFullMed']/drop[@name='resourceCoal']"/>
+	<append xpath="/blocks/block[@name='treePineBurntFullMed']">
+		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
+	</append>
 	<remove xpath="/blocks/block[@name='treeBurntMaple01']/drop[@name='resourceWood']"/>
+	<remove xpath="/blocks/block[@name='treeBurntMaple01']/drop[@name='resourceCoal']"/>
 	<append xpath="/blocks/block[@name='treeBurntMaple01']">
 		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
 	</append>
 	<remove xpath="/blocks/block[@name='treeBurntMaple02']/drop[@name='resourceWood']"/>
+	<remove xpath="/blocks/block[@name='treeBurntMaple02']/drop[@name='resourceCoal']"/>
 	<append xpath="/blocks/block[@name='treeBurntMaple02']">
 		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
 	</append>
 	<remove xpath="/blocks/block[@name='treeBurntMaple03']/drop[@name='resourceWood']"/>
+	<remove xpath="/blocks/block[@name='treeBurntMaple03']/drop[@name='resourceCoal']"/>
 	<append xpath="/blocks/block[@name='treeBurntMaple03']">
 		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
-	</append><!--
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="resourceCharCoal" count="3,8" tag="coalHarvest"/>
+	</append>
+  <!--Old unused/removed trees. kept just in case-->
+  <!--
 	<remove xpath="/blocks/block[@name='treePlantedMaple6m']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treePlantedMaple6m']">
 		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
@@ -328,7 +317,40 @@
 	<remove xpath="/blocks/block[@name='treePlantedMaple17mPlus']/drop[@name='resourceWood']"/>
 	<append xpath="/blocks/block[@name='treePlantedMaple17mPlus']">
 		<drop event="Harvest" name="woodLogPillar100" count="16" tag="oreWoodHarvest"/>
-	</append>-->
+	</append>
+	<remove xpath="/blocks/block[@name='treeMaple6m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeMaple6m']">
+		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeMaple13m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeMaple13m']">
+		<drop event="Harvest" name="woodLogPillar100" count="7" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeMaple15m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeMaple15m']">
+		<drop event="Harvest" name="woodLogPillar100" count="10" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeMaple16m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeMaple16m']">
+		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeMaple17m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeMaple17m']">
+		<drop event="Harvest" name="woodLogPillar100" count="15" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeBirch10m']/drop[@name='resourceWood']" />
+	<append xpath="/blocks/block[@name='treeBirch10m']">
+		<drop event="Harvest" name="woodLogPillar100" count="3" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeBirch12m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeBirch12m']">
+		<drop event="Harvest" name="woodLogPillar100" count="7" tag="oreWoodHarvest"/>
+	</append>
+	<remove xpath="/blocks/block[@name='treeBirch15m']/drop[@name='resourceWood']"/>
+	<append xpath="/blocks/block[@name='treeBirch15m']">
+		<drop event="Harvest" name="woodLogPillar100" count="11" tag="oreWoodHarvest"/>
+	</append>
+  -->
 
 <!-- bushes -->
 	<!--<remove xpath="/blocks/block[@name='treePlainsTree']/drop event[@event='Fall']"/>-->
@@ -351,16 +373,6 @@
 	<append xpath="/blocks/block[@name='treeAzalea']">
 		<drop event="Harvest" name="woodBranch" count="5,15" tag="oreWoodHarvest"/>
 	</append>
-<!--
-<set xpath="/blocks/block[@name='treePlainsTree']/drop[@event='Harvest']/@name">woodBranch</set>
-<set xpath="/blocks/block[@name='treePlainsTree']/drop[@event='count']/@name">5,25</set>
-<set xpath="/blocks/block[@name='treeDeadPineLeaf']/drop[@event='Harvest']/@name">woodBranch</set>
-<set xpath="/blocks/block[@name='treeDeadPineLeaf']/drop[@event='count']/@name">5,15</set>
-<set xpath="/blocks/block[@name='treeSnowyDeadBush']/drop[@event='Harvest']/@name">woodBranch</set>
-<set xpath="/blocks/block[@name='treeSnowyDeadBush']/drop[@event='count']/@name">5,15</set>
-<set xpath="/blocks/block[@name='treeAzalea']/drop[@event='Harvest']/@name">woodBranch</set>
-<set xpath="/blocks/block[@name='treeAzalea']/drop[@event='count']/@name">5,15</set>
--->
 
 
 <!-- LogSpike -->
@@ -385,7 +397,8 @@
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="DA6B14"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<property class="RepairItems">
+    <property name="resourceWood" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodLogSpike2"/>
 		<property name="Item" value="resourceWood"/>
@@ -406,8 +419,8 @@
 <block name="rWoodLogSpike2">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="4"/>
-	<property name="Damage_received" value="7"/>
+	<property name="Damage" value="6"/>
+	<property name="Damage_received" value="10"/>
 	<property name="Material" value="Mwood"/><!--200-->
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="6"/>
@@ -423,7 +436,8 @@
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="976329"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceWood" value="20"/> </property>
+	<property class="RepairItems">
+    <property name="resourceWood" value="20"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMetalLogSpike3"/>
 		<property name="Item" value="resourceScrapIron"/>
@@ -445,8 +459,8 @@
 <block name="rWoodMetalLogSpike3">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="5"/>
-	<property name="Damage_received" value="10"/>
+	<property name="Damage" value="9"/>
+	<property name="Damage_received" value="13"/>
 	<property name="Material" value="MwoodReinforced"/><!--225-->
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="6"/>
@@ -462,7 +476,8 @@
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="4D2D08"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceScrapIron" value="20"/> </property>
+	<property class="RepairItems">
+    <property name="resourceScrapIron" value="20"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4"/>
 		<property name="Item" value="resourceScrapIron"/>
@@ -485,8 +500,8 @@
 <block name="scrapIronLogSpike4">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="6"/>
-	<property name="Damage_received" value="9"/>
+	<property name="Damage" value="12"/>
+	<property name="Damage_received" value="16"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="MwoodMetal"/><!--300-->
 	<property name="Shape" value="New"/>
@@ -503,7 +518,9 @@
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="B8DFE5"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceScrapIron" value="40"/> </property>
+  <property name="MaxDamage" value="1000" />
+	<property class="RepairItems">
+    <property name="resourceScrapIron" value="40"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronLogSpike5"/>
 		<property name="Item" value="resourceScrapIron"/>
@@ -522,12 +539,54 @@
 	<property name="FilterTags" value="fdecor,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>
 </block>
+<block name="scrapIronLogSpike4Fire">
+	<property name="Class" value="TrunkTip"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="Damage" value="22"/>
+	<property name="Damage_received" value="26"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="MwoodMetal"/><!--300-->
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="cone1m"/>
+	<property name="Texture" value="307"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExchange" value="imposterPyramid" param1="87"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="FuelValue" value="300"/>
+	<property name="CanPickup" value="true"/>
+	<property name="UiBackgroundTexture" value="307"/>
+	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="B8DFE5"/>-->
+	<!--property name="DontDamageOnTouch" value="true" /-->
+	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+  <property name="MaxDamage" value="1000" />
+	<property class="RepairItems">
+    <property name="resourceScrapIron" value="40"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="rScrapIronLogSpike5Fire"/>
+		<property name="Item" value="resourceScrapIron"/>
+		<property name="ItemCount" value="40"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<property name="DowngradeBlock" value="rWoodMetalLogSpike3"/>
+	<drop event="Destroy" name="resourceWood" count="2,6"/>
+	<drop event="Destroy" name="resourceScrapIron" count="15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DescriptionKey" value="LogSpikeFireDesc"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>
 
 <block name="rScrapIronLogSpike5">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="7"/>
-	<property name="Damage_received" value="10"/>
+	<property name="Damage" value="15"/>
+	<property name="Damage_received" value="19"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Mmetal_medium"/><!--1000-->
 	<property name="Shape" value="New"/>
@@ -543,8 +602,10 @@
 	<property name="UiBackgroundTexture" value="352"/>
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="89A1A5"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
-	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceScrapIron" value="50"/> </property>
+	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+  <property name="MaxDamage" value="4000" />
+	<property class="RepairItems">
+    <property name="resourceScrapIron" value="50"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="steelLogSpike6"/>
 		<property name="Item" value="resourceForgedSteel"/>
@@ -563,12 +624,54 @@
 	<property name="FilterTags" value="fdecor,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>
 </block>
+<block name="rScrapIronLogSpike5Fire">
+	<property name="Class" value="TrunkTip"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="Damage" value="25"/>
+	<property name="Damage_received" value="29"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mmetal_medium"/><!--1000-->
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="cone1m"/>
+	<property name="Texture" value="352"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExchange" value="imposterPyramid" param1="110"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="FuelValue" value="300"/>
+	<property name="CanPickup" value="true"/>
+	<property name="UiBackgroundTexture" value="352"/>
+	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="89A1A5"/>-->
+	<!--property name="DontDamageOnTouch" value="true" /-->
+	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+  <property name="MaxDamage" value="4000" />
+	<property class="RepairItems"> 
+    <property name="resourceScrapIron" value="50"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelLogSpike6Fire"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<property name="DowngradeBlock" value="scrapIronLogSpike4Fire"/>
+	<drop event="Destroy" name="resourceWood" count="2,6"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DescriptionKey" value="LogSpikeFireDesc"/>
+	<property name="EconomicValue" value="70"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>
 
 <block name="steelLogSpike6">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="8"/>
-	<property name="Damage_received" value="40"/>
+	<property name="Damage" value="18"/>
+	<property name="Damage_received" value="22"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Msteel"/><!--7000-->
 	<property name="Shape" value="New"/>
@@ -585,7 +688,9 @@
 	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="828282"/>-->
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
-	<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
+  <property name="MaxDamage" value="7000" />
+	<property class="RepairItems">
+    <property name="resourceForgedSteel" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
 	<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
@@ -597,9 +702,45 @@
 	<property name="FilterTags" value="fdecor,ftraps"/>
 	<property name="SortOrder1" value="70g0"/>
 </block>
+<block name="steelLogSpike6Fire">
+	<property name="Class" value="TrunkTip"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="Damage" value="28"/>
+	<property name="Damage_received" value="32"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Msteel"/><!--7000-->
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="cone1m"/>
+	<property name="Texture" value="356,355,356,356,356,356"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="FuelValue" value="300"/>
+	<property name="CanPickup" value="true"/>
+	<property name="UiBackgroundTexture" value="356"/>
+	<!--<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="828282"/>-->
+	<!--property name="DontDamageOnTouch" value="true" /-->
+	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+  <property name="MaxDamage" value="7000" />
+	<property class="RepairItems">
+    <property name="resourceForgedSteel" value="10"/> </property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<property name="DowngradeBlock" value="rScrapIronLogSpike5Fire"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="DescriptionKey" value="LogSpikeFireDesc"/>
+	<property name="EconomicValue" value="160"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>
+
 </append>
 
-<!--pickup spikes-->
+<!--pickup spikes and mines-->
 	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
 		<property name="CanPickup" value="true"/>
 	</append>
@@ -612,5 +753,20 @@
 	<append xpath="/blocks/block[@name='barbedFence']">
 		<property name="CanPickup" value="true"/>
 	</append>
-
+  <append xpath="/blocks/block[@name='mineCandyTin']">
+    <property name="CanPickup" value="true"/>
+  </append>
+  <append xpath="/blocks/block[@name='rScrapIronPlateMine']">
+    <property name="CanPickup" value="true"/>
+  </append>
+  <append xpath="/blocks/block[@name='mineCookingPot']">
+    <property name="CanPickup" value="true"/>
+  </append>
+  <append xpath="/blocks/block[@name='mineHubcap']">
+    <property name="CanPickup" value="true"/>
+  </append>
+  <append xpath="/blocks/block[@name='mineAirFilter']">
+    <property name="CanPickup" value="true"/>
+  </append>
+ 
 </configs>
