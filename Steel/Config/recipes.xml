@@ -139,9 +139,6 @@
 	</recipe>
 
 <!--Steel scrap crafting-->
-	<recipe name="resourceScrapSteel" count="5" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
-		<ingredient name="resourceArrowHeadSteelAP" count="1"/>
-	</recipe>
 	<recipe name="resourceScrapSteel" count="24" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
 		<ingredient name="armorSteelSetParts" count="1"/>
 	</recipe>
@@ -171,9 +168,6 @@
 	</recipe>
 
 <!--Iron scrap crafting-->
-	<recipe name="resourceScrapIron" count="2" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
-		<ingredient name="resourceArrowHeadIron" count="1"/>
-	</recipe>
 	<recipe name="resourceScrapIron" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
 		<ingredient name="gunMGT1AK47Parts" count="1"/>
 	</recipe>
