@@ -1,0 +1,121 @@
+<config>
+
+<append xpath="/recipes">
+
+<recipe name="resourceScrapSteelBundle" count="1" craft_time="10" tags="learnable">
+ <ingredient name="resourceScrapSteel" count="6000"/>
+</recipe>
+
+<!--arrowhead "scrap"-->
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoArrowSteelAP" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoArrowFlaming" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoArrowExploding" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoCrossbowBoltExploding" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadIron" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoArrowIron" count="1"/>
+	</recipe>
+<recipe name="resourceArrowHeadIron" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
+		<ingredient name="ammoCrossbowBoltIron" count="1"/>
+	</recipe>
+
+<!--misc-->
+	<recipe name="resourceScrapSteel" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="unit_steel" count="1"/>
+	</recipe>
+	<recipe name="resourceForgedSteel" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering" always_unlocked="true">
+		<ingredient name="unit_steel" count="20"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_steel"/>
+		</effect_group>
+	</recipe>
+	<recipe name="resourceArrowHeadSteelAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+		<ingredient name="unit_steel" count="5"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_steel"/>
+		</effect_group>
+	</recipe>
+
+
+<!--Steel scrap crafting-->
+	<recipe name="resourceScrapSteel" count="24" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="armorSteelSetParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="28" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunExplosivesT3RocketLauncherParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnBladeT3MacheteParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnSpearT3SteelSpearParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="34" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnClubT3SteelClubParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="12" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="14" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeToolAllSteelParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeToolAxeT3ChainsawParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapSteel" count="34" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="1"/>
+	</recipe>
+
+<!--Iron scrap crafting-->
+	<recipe name="resourceScrapIron" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunMGT1AK47Parts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="12" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunHandgunT1PistolParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunRifleT1HuntingRifleParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="20" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunShotgunT1DoubleBarrelParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="28" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunBotRoboticsParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="12" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="meleeWpnBatonT2StunBatonParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="4" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="gunBowT1WoodenBowParts" count="1"/>
+	</recipe>
+	<recipe name="resourceScrapIron" count="2" material_based="true" always_unlocked="true" use_ingredient_modifier="false">
+		<ingredient name="armorMilitarySetParts" count="1"/>
+	</recipe>
+
+<!--other crafting-->
+	<recipe name="toolBeaker" count="1" craft_time="30" craft_area="forge" tags="perkAdvancedEngineering">
+		<ingredient name="unit_glass" count="60"/>
+		<ingredient name="unit_clay" count="10"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="unit_glass,unit_clay"/>
+		</effect_group>
+	</recipe>
+
+
+
+</append>
+
+</config>

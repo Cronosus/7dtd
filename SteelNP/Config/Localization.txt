@@ -1,0 +1,8 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+
+lblsteel,UI,XUI Forge,,Steel,,,,,,,,,,,,,,,
+resourceScrapSteel,items,Item,,Steel,,,,,,,,,,,,,,,
+resourceScrapSteelBundle,items,Item,,Stack of Steel (6000),,,,,,,,,,,,,,,
+resourceScrapSteelBundleDesc,items,Item,,This is a compact stack of steel. Use this item to open and unpack it,,,,,,,,,,,,,,,
+resourceScrapSteelDesc,items,Item,,"A core resource for crafting & forging. Next to iron there's nothing more useful.",,,,,,,,,,,,,,,
+

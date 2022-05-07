@@ -1,0 +1,6 @@
+<config>
+
+<append xpath="/blocks/block[@name='forge']/property[@class='Workstation']/property[@name='InputMaterials' and @value]/@value">,steel</append>
+
+
+</config>
