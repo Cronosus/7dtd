@@ -602,7 +602,7 @@
 	<property name="UiBackgroundTexture" value="352"/>
 	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="89A1A5"/>
 	<!--property name="DontDamageOnTouch" value="true" /-->
-	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+	<!--<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>-->
   <property name="MaxDamage" value="4000" />
 	<property class="RepairItems">
     <property name="resourceScrapIron" value="50"/> </property>
