@@ -50,20 +50,6 @@
 		<ingredient name="woodLogPillar100" count="1"/>
 	</recipe>
 
-<!--Fire logspikes-->
-  <recipe name="scrapIronLogSpike4Fire" count="1">
-	 <ingredient name="resourceTreeSap" count="1"/>
-	 <ingredient name="scrapIronLogSpike4" count="1"/>
-  </recipe>
-  <recipe name="rScrapIronLogSpike5Fire" count="1">
-	 <ingredient name="resourceTreeSap" count="1"/>
-	 <ingredient name="rScrapIronLogSpike5" count="1"/>
-  </recipe>
-  <recipe name="steelLogSpike6Fire" count="1">
-	 <ingredient name="resourceTreeSap" count="1"/>
-	 <ingredient name="steelLogSpike6" count="1"/>
-  </recipe>
-
 <!--substitutes-->
   <recipe name="meleeToolTorch" count="1">
 	 <ingredient name="resourceTreeSap" count="1"/>
