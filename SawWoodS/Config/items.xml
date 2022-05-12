@@ -1,4 +1,8 @@
 <config>
+<append xpath="/items/item[@name='upgradeResourcesPackAdmin']/property/property[@name='Create_item']/@value">,resourceTreeSap</append>
+<append xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property/property[@name='Allowed_upgrade_items']/@value">,resourceTreeSap</append>
+<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property/property[@name='Allowed_upgrade_items']/@value">,resourceTreeSap</append>
+<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property/property[@name='Allowed_upgrade_items']/@value">,resourceTreeSap</append>
 
 <!-- tablesaw schematic -->
 <append xpath="/items">
@@ -43,7 +47,6 @@
 		</property>
 	</item>
 
-<!-- WIP -->
 	<item name="resourceCharCoal">
 		<property name="HoldType" value="45"/>
 		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
@@ -60,6 +63,7 @@
 		<property name="CraftingIngredientTime" value="0.5"/>
 		<property name="Weight" value="5"/>
 	</item>
+
 	<item name="resourceCharCoalBundle">
 		<property name="Extends" value="resourceRockSmallBundle"/>
 		<property name="CustomIcon" value="resourceCoal"/>
@@ -70,21 +74,24 @@
 			<property name="Create_item_count" value="6000"/>
 		</property>
 	</item>
+
 	<item name="resourceTreeSap">
 		<property name="HoldType" value="3"/>
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Morganic"/>
+    <property name="Material" value="Morganic"/>
 		<property name="CustomIcon" value="drinkJarRiverWater"/>
 			<property name="CustomIconTint" value="225,106,12"/>
 		<Property name="TintColor" value="E16A0C"/>
 		<property name="Stacknumber" value="1000"/>
 		<property name="FuelValue" value="30"/>
 		<property name="EconomicValue" value="50"/>
-		<property name="EconomicBundleSize" value="1"/>
+		<property name="EconomicBundleSize" value="10"/>
 		<property name="Group" value="Resources"/>
-		<property name="CraftingIngredientTime" value="10"/>
-		<property name="Weight" value="10"/>
+	  <property name="RepairTime" value=".5"/>
+  	<property name="RepairAmount" value="20"/>
+		<property name="CraftingIngredientTime" value=".2"/>
+		<property name="Weight" value="1"/>
 	</item>
 
 </append>
