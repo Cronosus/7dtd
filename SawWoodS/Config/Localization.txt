@@ -14,6 +14,7 @@ resourceCharCoalBundleDesc,items,Item,New,This is a compact stack of charcoal. U
 resourceTreeSap,items,Item,New,Tree sap,,,,,,,,,,,,,,
 resourceTreeSapDesc,items,Item,New,Tree Sap. Sirup from trees. Flammable. For crafting..,,,,,,,,,,,,,,
 LogSpikeFireDesc,blocks,Block,New,Logspike coated with adhesive. Make enemies burn.,,,,,
+WoodLogSpike1,blocks,Trap,,,Wood Log Spike,,,,,,,,,,,,,
 rWoodLogSpike2,blocks,Trap,,,Reinforced Wood Log Spike,,,,,,,,,,,,,
 rWoodMetalLogSpike3,blocks,Trap,,,Reinforced Wood Metal Log Spike,,,,,,,,,,,,,
 rScrapIronLogSpike5,blocks,Trap,,,Reinforced Iron Log Spike,,,,,,,,,,,,,

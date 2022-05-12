@@ -542,8 +542,8 @@
 <block name="scrapIronLogSpike4Fire">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="22"/>
-	<property name="Damage_received" value="26"/>
+	<property name="Damage" value="14"/>
+	<property name="Damage_received" value="18"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="MwoodMetal"/><!--300-->
 	<property name="Shape" value="New"/>
@@ -557,7 +557,7 @@
 	<property name="FuelValue" value="300"/>
 	<property name="CanPickup" value="true"/>
 	<property name="UiBackgroundTexture" value="307"/>
-	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="B8DFE5"/>
+	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="B8DFE8"/>
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
   <property name="MaxDamage" value="1000" />
@@ -627,8 +627,8 @@
 <block name="rScrapIronLogSpike5Fire">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="25"/>
-	<property name="Damage_received" value="29"/>
+	<property name="Damage" value="17"/>
+	<property name="Damage_received" value="21"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Mmetal_medium"/><!--1000-->
 	<property name="Shape" value="New"/>
@@ -642,7 +642,7 @@
 	<property name="FuelValue" value="300"/>
 	<property name="CanPickup" value="true"/>
 	<property name="UiBackgroundTexture" value="352"/>
-	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="89A1A5"/>
+	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="89A1A8"/>
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
   <property name="MaxDamage" value="4000" />
@@ -691,6 +691,12 @@
   <property name="MaxDamage" value="7000" />
 	<property class="RepairItems">
     <property name="resourceForgedSteel" value="10"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelLogSpike6Fire"/>
+		<property name="Item" value="resourceTreeSap"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
 	<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
@@ -705,8 +711,8 @@
 <block name="steelLogSpike6Fire">
 	<property name="Class" value="TrunkTip"/>
 	<property name="BlockTag" value="Spike"/>
-	<property name="Damage" value="28"/>
-	<property name="Damage_received" value="32"/>
+	<property name="Damage" value="20"/>
+	<property name="Damage_received" value="24"/>
 	<property name="DisplayType" value="blockHardened"/>
 	<property name="Material" value="Msteel"/><!--7000-->
 	<property name="Shape" value="New"/>
@@ -720,7 +726,7 @@
 	<property name="FuelValue" value="300"/>
 	<property name="CanPickup" value="true"/>
 	<property name="UiBackgroundTexture" value="356"/>
-	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="828282"/>
+	<property name="CustomIcon" value="shapeCone1m"/><property name="CustomIconTint" value="828285"/>
 	<!--property name="DontDamageOnTouch" value="true" /-->
 	<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
   <property name="MaxDamage" value="7000" />
