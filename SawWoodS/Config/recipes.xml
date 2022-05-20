@@ -1,7 +1,7 @@
 <configs>
 
 
-<!-- Remove Wood Log recipe. -->
+<!-- Remove recipes. -->
 <remove xpath="/recipes/recipe[@name='woodLogPillar100']"/>
 
 
@@ -13,6 +13,10 @@
   </recipe>
   <recipe name="woodBranchBundle" count="1" craft_time="10" tags="learnable">
 	  <ingredient name="woodBranch" count="6000"/>
+  </recipe>
+  <recipe name="woodBranchBundled" count="1" craft_time="10" tags="learnable">
+	  <ingredient name="woodBranch" count="5"/>
+	  <ingredient name="resourceYuccaFibers" count="1"/>
   </recipe>
 
 
@@ -102,6 +106,69 @@
 	 <ingredient name="resourceSewingKit" count="1"/>
   </recipe>
 
+<!-- branches recipes. -->
+  <recipe name="meleeToolTorch" count="1">
+	 <ingredient name="resourceAnimalFat" count="1"/>
+	 <ingredient name="resourceCloth" count="1"/>
+	 <ingredient name="woodBranchBundled" count="1"/>
+  </recipe>
+  <recipe name="meleeToolTorch" count="1">
+	 <ingredient name="resourceTreeSap" count="1"/>
+	 <ingredient name="resourceCloth" count="1"/>
+	 <ingredient name="woodBranchBundled" count="1"/>
+  </recipe>
+  <recipe name="meleeWpnClubT0WoodenClub" count="1" tags="perkPummelPete">
+	 <ingredient name="woodBranchBundled" count="5"/>
+  </recipe>
+  <recipe name="gunBowT0PrimitiveBow" count="1" tags="perkArchery">
+	 <ingredient name="woodBranchBundled" count="8"/>
+	 <ingredient name="resourceYuccaFibers" count="3"/>
+  </recipe>
+  <recipe name="meleeWpnSpearT0StoneSpear" count="1" tags="perkJavelinMaster">
+	 <ingredient name="resourceRockSmall" count="5"/>
+	 <ingredient name="resourceYuccaFibers" count="3"/>
+	 <ingredient name="woodBranchBundled" count="3"/>
+  </recipe>
+  <recipe name="meleeWpnSledgeT0StoneSledgehammer" count="1" tags="perkSkullCrusher">
+	 <ingredient name="resourceRockSmall" count="10"/>
+	 <ingredient name="resourceYuccaFibers" count="10"/>
+	 <ingredient name="woodBranchBundled" count="10"/>
+  </recipe>
+  <recipe name="meleeToolRepairT0StoneAxe" count="1" tags="perkMiner69r">
+	 <ingredient name="resourceRockSmall" count="2"/>
+	 <ingredient name="resourceYuccaFibers" count="2"/>
+	 <ingredient name="woodBranchBundled" count="2"/>
+  </recipe>
+  <recipe name="ammoArrowIron" count="1">
+	 <ingredient name="resourceArrowHeadIron" count="1"/>
+	 <ingredient name="woodBranch" count="1"/>
+	 <ingredient name="resourceFeather" count="1"/>
+  </recipe>
+  <recipe name="ammoBundleArrowIron" count="1" craft_time="240" tags="learnable">
+	 <ingredient name="resourceArrowHeadIron" count="80"/>
+	 <ingredient name="woodBranch" count="80"/>
+	 <ingredient name="resourceFeather" count="80"/>
+  </recipe>
+  <recipe name="ammoArrowStone" count="1">
+	 <ingredient name="resourceRockSmall" count="1"/>
+	 <ingredient name="woodBranch" count="1"/>
+	 <ingredient name="resourceFeather" count="1"/>
+  </recipe>
+  <recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+	 <ingredient name="resourceRockSmall" count="80"/>
+	 <ingredient name="woodBranch" count="80"/>
+	 <ingredient name="resourceFeather" count="80"/>
+  </recipe>
+  <recipe name="ammoCrossbowBoltIron" count="1">
+	 <ingredient name="resourceArrowHeadIron" count="1"/>
+	 <ingredient name="woodBranch" count="1"/>
+	 <ingredient name="resourceFeather" count="1"/>
+  </recipe>
+  <recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="240" tags="learnable">
+	 <ingredient name="resourceArrowHeadIron" count="80"/>
+	 <ingredient name="woodBranch" count="80"/>
+	 <ingredient name="resourceFeather" count="80"/>
+  </recipe>
 
 </append>
 
