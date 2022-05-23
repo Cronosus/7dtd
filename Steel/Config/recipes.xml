@@ -1,5 +1,11 @@
 <config>
 
+<recipe name="resourceScrapSteel" count="1" tooltip="ttScrapMetalIron" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+
+<recipe name="resourceScrapSteelBundle" count="1" craft_time="10" tags="learnable">
+ <ingredient name="resourceScrapSteel" count="6000"/>
+</recipe>
+
 <append xpath="/recipes">
 <!--arrowhead "scrap"-->
 <recipe name="resourceArrowHeadSteelAP" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap">
