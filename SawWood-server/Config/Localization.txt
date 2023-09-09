@@ -1,7 +1,6 @@
 Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
 tableSaw,blocks,Workstation,,Broken Table Saw,,,,,,,,,,,,,,
 tableSawWorking,blocks,Workstation,,Table Saw,,,,,,,,,,,,,,
-tableSawSchematic,items,Ammo,New,TableSaw Schematic,,,,,,,,,,,,,,
 tableSawDesc1,blocks,Workstation,New,Broken TableSaw.,,,,,,,,,,,,,,
 workstationsT3-2,progression,Attribute,,,Tier 3: Table Saw,,,,,,,,,,,,,,
 woodBranch,items,Item,New,Wood Branch,,,,,,,,,,,,,,
