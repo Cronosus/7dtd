@@ -2,7 +2,7 @@ Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
 tableSaw,blocks,Workstation,,Broken Table Saw,,,,,,,,,,,,,,
 tableSawWorking,blocks,Workstation,,Table Saw,,,,,,,,,,,,,,
 tableSawDesc1,blocks,Workstation,New,Broken TableSaw.,,,,,,,,,,,,,,
-workstationsT3-2,progression,Attribute,,,Tier 3: Table Saw,,,,,,,,,,,,,,
+workstationsT3-2,progression,Attribute,,Tier 3: Table Saw,,,,,,,,,,,,,,
 woodBranch,items,Item,New,Wood Branch,,,,,,,,,,,,,,
 woodBranchDesc,items,Item,New,A piece of branch. Good as fuel and for some crafting.,,,,,,,,,,,,,,
 woodBranchBundle,items,Item,New,Wood Branch Bundle,,,,,,,,,,,,,,
