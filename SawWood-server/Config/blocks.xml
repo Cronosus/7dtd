@@ -102,7 +102,6 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="WaterFlow" value="permitted"/>
-	<property name="UnlockedBy" value="perkAdvancedEngineering,tableSawSchematic"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="5000"/>
