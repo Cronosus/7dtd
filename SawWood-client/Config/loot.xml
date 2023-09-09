@@ -1,0 +1,9 @@
+<configs>
+	<append xpath="/lootcontainers">
+        <lootgroup name="brokentablesaw" count="1">
+            <item name="resourceScrapIron" count="0,10"/>
+        	<item name="resourceWood" count="1,30" loot_prob_template="guaranteed"/>
+        	<item name="woodBranch" count="10,50" loot_prob_template="guaranteed"/>
+        </lootgroup>
+	</append>
+</configs>

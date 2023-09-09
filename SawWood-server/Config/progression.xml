@@ -1,0 +1,18 @@
+<configs>
+
+<!-- tableSaw -->
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @level='2,5']/@tags">,tableSawCrafting</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@unlock_level='30']/@icon">,tableSawWorking</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@unlock_level='30']/@name_key">,workstationsT3-2</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[@unlock_level='30']">
+			<unlock_entry item="tableSawWorking" unlock_tier="2" />
+</append>
+<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='cementMixer']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="tableSawWorking"/>
+</insertAfter>
+
+<!-- other -->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[@level='1,100']/@tags">,resourceWood,bridgeWoodBlock,plainWoodWindowPlugCTRPlate</append>
+
+
+</configs>
