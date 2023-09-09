@@ -76,8 +76,6 @@
 	<property name="Group" value="Building,Decor/Miscellaneous,Resource"/>
 	<property name="FilterTags" value="MC_building,SC_loot,SC_decor"/>
 	<property name="DescriptionKey" value="tableSawDesc1"/>
-	<property name="OpenSound" value="open_workbench"/>
-	<property name="CloseSound" value="close_workbench"/>
 </block>
 
 <block name="tableSawWorking">
